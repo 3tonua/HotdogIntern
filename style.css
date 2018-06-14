@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fbfafa;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+@font-face {
+    font-family: 'SansSerifSemibold';
+    src: url(./fonts/OpenSansSemibold.ttf);
+}
+@font-face {
+    font-family: 'SansSerifBold';
+    src: url(./fonts/OpenSansBold.ttf);
+}
+@font-face {
+    font-family: 'SansSerifLight';
+    src: url(./fonts/OpenSansLight.ttf);
+}
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url(./fonts/ProximaNovaSemibold.otf);
+}
+.header {
+    width: 100%;
+    max-width: 1440px;
+    height: 100px;
+    background-color: #ffffff;
+    top: 480px;
+    position: absolute;
+    z-index: 5;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.13);
+}
+.header nav {
+    text-align: center;
+    margin-top: 35px;
+    position: relative;
+}
+.header nav a{
+    margin: auto 40px;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: relative;
+    color: #2e2e2e;
+    text-decoration: none;
+    font-family: 'SansSerifSemibold', sans-serif;
+}
+body .instagram {
+    position: absolute;
+    top: 13px;
+    margin-left: 80%;
+    z-index: 9;
+    color: #ffffff;
+    font-family: "SansSerifLight", sans-serif;
+    font-size: 12pt;
+}
+.gradient {
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    width: 100%;
+    max-width: 1440px;
+    height: 250px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(241, 218, 54, 0));
+}
+.photogrid {
+    background-image: url("img/photogrid.png");
+    width: 100%;
+    max-width: 1440px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    top: 0;
+}
+.hotdog {
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+    display: block;
+    margin-top: 200px;
+}
+.hotdog-logo {
+    display: block;
+    position: relative;
+    width: 92px;
+    height: 93px;
+    z-index: 72;
+    margin: 0 auto;
+}
+.hotdog-text {
+    max-width: 840px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: 'SansSerifSemibold', sans-serif;
+    font-size: 36pt;
+    color: #737376;
+    padding-top: 50px;
+}
+.hotdog .btn {
+    width: 310px;
+    height: 60px;
+    background-color: #286782;
+    border-radius: 6px;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 170px;
+}
+.hotdog .btn a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'SansSerifSemibold', sans-serif;
+    font-size: 16pt;
+    display: table-cell;
+    vertical-align: middle;
+}
+.content-grid {
+    width: 100%;
+    max-width: 1440px;
+    background-color: #ffffff;
+}
+.hot {
+    width: 100%;
+    display: table;
+    position: relative;
+    margin: 0;
+}
+.content-text {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+    color: #737376;
+}
+.content-text p:first-child {
+    margin: 0 auto;
+    width: 66%;
+    padding-top: 25%;
+    font-family: "SansSerifSemibold", sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+}
+.content-text p {
+    margin: 0 auto;
+    width: 66%;
+    margin-top: 40px;
+    font-family: "SansSerifLight", sans-serif;
+    font-size:  14pt;
+}
+.hot img {
+    width: 50%;
+    height: auto;
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+.contact {
+    width: 50%;
+    font-family: "SansSerif", sans-serif;
+    font-size: 24px;
+    margin: 150px auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    color: #333;
+    box-sizing: border-box;
+}
+.contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    height: 100px;
+    min-height: 50px;
+}
+.contact button {
+    width: 100%;
+    font-size: 20px;
+    background-color: #286782;
+    padding: 10px;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    height:70px;
+    background-color: #efefef;
+    position: relative;
+    display: block;
+    color: #737376;
+}
+.footer div {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+    display: inline;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11pt;
+}
+.footer div:last-child {
+    position: absolute;
+    text-align: right;
+    right: 20px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .content-text p:first-child {
+        margin: 0 auto;
+        width: 75%;
+        padding-top: 25%;
+        font-family: "Open Sans Semibold", sans-serif;
+        font-weight: bold;
+        font-size: 18pt;
+    }
+    .content-text p {
+        margin: 0 auto;
+        width: 75%;
+        margin-top: 20px;
+        font-family: "SansSerifLight", sans-serif;
+        font-size:  14pt;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .content-text p:first-child {
+        margin: 0 auto;
+        width: 75%;
+        padding-top: 20%;
+        font-family: "Open Sans Semibold", sans-serif;
+        font-weight: bold;
+        font-size: 17pt;
+    }
+    .content-text p {
+        margin: 0 auto;
+        width: 75%;
+        margin-top: 15px;
+        font-family: "SansSerifLight", sans-serif;
+        font-size:  13pt;
+    }
+    .footer div {
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 10px;
+        display: inline;
+        font-family: "Open Sans", sans-serif;
+        font-size: 10pt;
+    }
+    .footer div:last-child {
+        position: absolute;
+        text-align: right;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .photogrid {
+        background-image: url("img/photogrid-mobile.png");
+        width: 100%;
+        height: 249px;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        top: 0;
+    }
+    .gradient {
+        position: absolute;
+        top: 0;
+        z-index: 8;
+        width: 100%;
+        height: 249px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(241, 218, 54, 0));
+    }
+    .header{
+        margin-top: 0;
+        width: 100%;
+        height: 330px;
+        background-color: #ffffff;
+        top: 0;
+        position: relative;
+        display: block;
+        z-index: 5;
+        box-shadow: 0 1px 9px rgba(0, 0, 0, 0.13);
+    }
+    .header nav {
+        text-align: center;
+        position: absolute;
+        display: block;
+        width: 100%;
+    }
+    .header nav a{
+        display: block;
+        width:100%;
+        margin: 40px auto;
+        text-transform: uppercase;
+        font-size: 30px;
+        position: relative;
+    }
+    .header nav a:first-child {
+        margin-top: 0;
+    }
+    .hotdog {
+        width: 100%;
+        position: relative;
+        display: block;
+        margin-top: 80px;
+    }
+    .hotdog-logo {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+    }
+    .hotdog-text {
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        text-align: center;
+        font-family: 'SansSerifSemibold', sans-serif;
+        font-size: 32pt;
+        color: #737376;
+        padding-top: 50px;
+    }
+    .hotdog .btn {
+        width: 90%;
+        height: 100px;
+        background-color: #286782;
+        position: relative;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        border-radius: 0;
+    }
+    .hotdog .btn a {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        font-family: "SansSerifSemibold", sans-serif;
+        font-size: 22pt;
+        display: block;
+        padding-top: 30px;
+    }
+    .content-grid {
+        width: 100%;
+    }
+    .hot {
+        width: 100%;
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+    .content-text {
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
+        display: block;
+    }
+    .content-text p:first-child {
+        margin: 0 auto;
+        width: 80%;
+        padding-top: 0;
+        font-family: "Open Sans Semibold", sans-serif;
+        font-weight: bold;
+        font-size: 22pt;
+    }
+    .content-text p {
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 20px;
+        font-family: "SansSerifLight", sans-serif;
+        font-size:  18pt;
+    }
+    .hot img {
+        width: 100%;
+        height: auto;
+        float: right;
+        background: cover;
+        position: relative;
+        display: inline-block;
+    }
+
+    .contact {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: #efefef;
+        position: relative;
+        display: inline-block;
+        color: #737376;
+    }
+    .footer > div {
+        position: relative;
+        text-align: center;
+        margin-top: 15px;
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12pt;
+        width: 100%;
+        float: none;
+        right: 0;
+    }
+    .footer div:last-child {
+        position: relative;
+        text-align: center;
+        right: 0;
+    }
+}
