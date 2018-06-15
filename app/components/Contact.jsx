@@ -24,6 +24,12 @@ export default class Contact extends Component {
 
     handleSubmit = () => {
         postData(this.state.data);
+        this.setState({
+            data: {
+                name: '',
+                email: '',
+                comment: '',
+            }
     };
 
     render() {
